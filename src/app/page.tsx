@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-green-900">
@@ -544,7 +542,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg text-white/70">
-              We're here to serve you better
+              We&apos;re here to serve you better
             </p>
           </div>
 
