@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-green-900">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100">
       {/* Navigation */}
-      <nav className="backdrop-blur-md bg-white/10 border-b border-white/20 sticky top-0 z-50">
+      <nav className="backdrop-blur-md bg-white/90 border-b border-green-200 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
@@ -10,32 +10,32 @@ export default function Home() {
                 <h1 className="text-3xl font-black bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
                   Safaricom Shop
                 </h1>
-                <p className="text-sm text-white/80 font-medium">Ruaka</p>
+                <p className="text-sm text-gray-600 font-medium">Ruaka</p>
               </div>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 <a
                   href="#home"
-                  className="text-white/90 hover:text-green-400 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-white/10"
+                  className="text-gray-700 hover:text-green-600 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-green-50"
                 >
                   Home
                 </a>
                 <a
                   href="#services"
-                  className="text-white/90 hover:text-green-400 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-white/10"
+                  className="text-gray-700 hover:text-green-600 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-green-50"
                 >
                   Services
                 </a>
                 <a
                   href="#about"
-                  className="text-white/90 hover:text-green-400 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-white/10"
+                  className="text-gray-700 hover:text-green-600 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-green-50"
                 >
                   About
                 </a>
                 <a
                   href="#contact"
-                  className="text-white/90 hover:text-green-400 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-white/10"
+                  className="text-gray-700 hover:text-green-600 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-green-50"
                 >
                   Contact
                 </a>
@@ -61,17 +61,17 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
                 Welcome to{" "}
-                <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent">
                   Ruaka Safaricom Shop
                 </span>
               </h1>
 
-              <p className="text-lg text-white/80 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Experience cutting-edge mobile technology with our premium
                 services and revolutionary{" "}
-                <span className="text-green-400 font-bold">
+                <span className="text-green-600 font-bold">
                   Lipa Mdogo Mdogo
                 </span>{" "}
                 payment solutions
@@ -82,7 +82,7 @@ export default function Home() {
                   <span className="relative z-10">Visit Our Shop</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
-                <button className="px-6 py-3 backdrop-blur-md bg-white/10 border border-white/30 text-white font-bold rounded-xl transition-all duration-300 hover:bg-white/20 hover:border-white/50">
+                <button className="px-6 py-3 backdrop-blur-md bg-white/80 border border-green-300 text-gray-700 font-bold rounded-xl transition-all duration-300 hover:bg-green-50 hover:border-green-400">
                   Explore Services
                 </button>
               </div>
@@ -93,37 +93,37 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 {/* Phone Mockups */}
                 <div className="space-y-4">
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
                     <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
                       <span className="text-2xl">📱</span>
                     </div>
-                    <h3 className="text-white font-semibold text-sm text-center">
+                    <h3 className="text-gray-800 font-semibold text-sm text-center">
                       Latest Phones
                     </h3>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
                     <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
                       <span className="text-2xl">🎧</span>
                     </div>
-                    <h3 className="text-white font-semibold text-sm text-center">
+                    <h3 className="text-gray-800 font-semibold text-sm text-center">
                       Accessories
                     </h3>
                   </div>
                 </div>
                 <div className="space-y-4 mt-8">
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
                     <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
                       <span className="text-2xl">💰</span>
                     </div>
-                    <h3 className="text-white font-semibold text-sm text-center">
+                    <h3 className="text-gray-800 font-semibold text-sm text-center">
                       Lipa Mdogo Mdogo
                     </h3>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
                     <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
                       <span className="text-2xl">🛠️</span>
                     </div>
-                    <h3 className="text-white font-semibold text-sm text-center">
+                    <h3 className="text-gray-800 font-semibold text-sm text-center">
                       Support
                     </h3>
                   </div>
@@ -137,20 +137,20 @@ export default function Home() {
       {/* Services Section - Zigzag Layout */}
       <section
         id="services"
-        className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden"
+        className="py-20 bg-gradient-to-b from-green-100 to-white relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-green-500/20 text-green-400 text-sm font-semibold rounded-full mb-4">
+            <span className="inline-block px-4 py-2 bg-green-500/20 text-green-600 text-sm font-semibold rounded-full mb-4">
               OUR SERVICES
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
               What We{" "}
-              <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 Offer
               </span>
             </h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Cutting-edge mobile solutions designed to elevate your digital
               experience
             </p>
@@ -161,7 +161,7 @@ export default function Home() {
             {/* Service 1 - Lipa Mdogo Mdogo */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-yellow-500/30 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 ring-2 ring-yellow-500/20">
+              <div className="relative bg-white/90 backdrop-blur-md border border-yellow-500/30 rounded-2xl p-6 hover:bg-yellow-50 transition-all duration-500 ring-2 ring-yellow-500/20 shadow-lg">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <svg
@@ -179,7 +179,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
                       Lipa Mdogo Mdogo
                     </h3>
                     <div className="inline-block bg-yellow-500 text-black px-2 py-1 rounded-full text-xs font-bold">
@@ -187,13 +187,13 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <p className="text-white/70 text-sm leading-relaxed mb-4">
+                <p className="text-gray-700 text-sm leading-relaxed mb-4">
                   Our revolutionary flexible payment solution that makes premium
                   mobile devices accessible to everyone. Pay little by little
                   and own your dream phone today!
                 </p>
-                <div className="flex items-center text-yellow-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                  Start Paying Little by Little
+                <div className="flex items-center text-yellow-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  Start Paying mdogo mdogo
                   <svg
                     className="w-4 h-4 ml-2"
                     fill="none"
@@ -214,7 +214,7 @@ export default function Home() {
             {/* Service 2 - Mobile Accessories */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500">
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-2xl p-6 hover:bg-green-50 transition-all duration-500 shadow-lg">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <svg
@@ -232,17 +232,17 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
                       Premium Accessories
                     </h3>
                   </div>
                 </div>
-                <p className="text-white/70 text-sm leading-relaxed mb-4">
+                <p className="text-gray-700 text-sm leading-relaxed mb-4">
                   Discover our curated collection of premium mobile accessories.
                   From protective cases to high-quality headphones, we have
                   everything you need.
                 </p>
-                <div className="flex items-center text-red-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-red-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Explore Collection
                   <svg
                     className="w-4 h-4 ml-2"
@@ -264,7 +264,7 @@ export default function Home() {
             {/* Service 3 - Mobile Phones */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500">
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-2xl p-6 hover:bg-green-50 transition-all duration-500 shadow-lg">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <svg
@@ -282,17 +282,17 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
                       Latest Smartphones
                     </h3>
                   </div>
                 </div>
-                <p className="text-white/70 text-sm leading-relaxed mb-4">
+                <p className="text-gray-700 text-sm leading-relaxed mb-4">
                   Get your hands on the latest smartphones from top brands with
                   competitive prices, comprehensive warranty, and expert setup
                   assistance.
                 </p>
-                <div className="flex items-center text-blue-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   View Phones
                   <svg
                     className="w-4 h-4 ml-2"
@@ -314,7 +314,7 @@ export default function Home() {
             {/* Service 4 - Customer Care */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500">
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-2xl p-6 hover:bg-green-50 transition-all duration-500 shadow-lg">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <svg
@@ -332,17 +332,17 @@ export default function Home() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-white mb-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
                       Customer Care Excellence
                     </h3>
                   </div>
                 </div>
-                <p className="text-white/70 text-sm leading-relaxed mb-4">
+                <p className="text-gray-700 text-sm leading-relaxed mb-4">
                   Professional customer support with expert assistance for all
                   your Safaricom needs. Our dedicated team ensures you get the
                   best service experience.
                 </p>
-                <div className="flex items-center text-green-400 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-green-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Learn More
                   <svg
                     className="w-4 h-4 ml-2"
@@ -367,27 +367,27 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="py-20 bg-gradient-to-b from-black to-gray-900 relative"
+        className="py-20 bg-gradient-to-b from-white to-green-50 relative"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="inline-block px-4 py-2 bg-green-500/20 text-green-400 text-sm font-semibold rounded-full mb-6">
+              <span className="inline-block px-4 py-2 bg-green-500/20 text-green-600 text-sm font-semibold rounded-full mb-6">
                 ABOUT US
               </span>
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+              <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
                 Your Trusted{" "}
-                <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                   Mobile Partner
                 </span>
               </h2>
-              <p className="text-lg text-white/70 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Located in the heart of Ruaka, we are your trusted Safaricom
                 partner providing comprehensive mobile solutions. Our
                 experienced team is dedicated to delivering exceptional service
                 and ensuring you get the best value for your money.
               </p>
-              <p className="text-lg text-white/70 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 We specialize in customer care, mobile accessories, the latest
                 smartphones, and our signature Lipa Mdogo Mdogo service that
                 makes premium mobile devices accessible to everyone through
@@ -395,15 +395,15 @@ export default function Home() {
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="flex items-center p-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
+                <div className="flex items-center p-4 bg-white/80 backdrop-blur-md rounded-2xl border border-green-200 shadow-lg">
                   <div className="w-3 h-3 bg-green-500 rounded-full mr-4"></div>
-                  <span className="text-white font-semibold">
+                  <span className="text-gray-800 font-semibold">
                     Authorized Safaricom Dealer
                   </span>
                 </div>
-                <div className="flex items-center p-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10">
+                <div className="flex items-center p-4 bg-white/80 backdrop-blur-md rounded-2xl border border-green-200 shadow-lg">
                   <div className="w-3 h-3 bg-red-500 rounded-full mr-4"></div>
-                  <span className="text-white font-semibold">
+                  <span className="text-gray-800 font-semibold">
                     Expert Customer Support
                   </span>
                 </div>
@@ -412,8 +412,8 @@ export default function Home() {
 
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-3xl blur-2xl"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-12">
-                <h3 className="text-3xl font-bold text-white mb-8 text-center">
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-3xl p-12 shadow-lg">
+                <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
                   Why Choose Us?
                 </h3>
                 <div className="space-y-6">
@@ -432,10 +432,10 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-lg mb-2">
+                      <h4 className="text-gray-900 font-semibold text-lg mb-2">
                         Genuine Products with Warranty
                       </h4>
-                      <p className="text-white/70">
+                      <p className="text-gray-700">
                         All our products come with official warranty and
                         authenticity guarantee
                       </p>
@@ -456,10 +456,10 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-lg mb-2">
+                      <h4 className="text-gray-900 font-semibold text-lg mb-2">
                         Competitive Pricing
                       </h4>
-                      <p className="text-white/70">
+                      <p className="text-gray-700">
                         Best prices in the market with regular promotions and
                         discounts
                       </p>
@@ -480,10 +480,10 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-lg mb-2">
+                      <h4 className="text-gray-900 font-semibold text-lg mb-2">
                         Flexible Payment Options
                       </h4>
-                      <p className="text-white/70">
+                      <p className="text-gray-700">
                         Multiple payment methods including our signature Lipa
                         Mdogo Mdogo
                       </p>
@@ -504,10 +504,10 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold text-lg mb-2">
+                      <h4 className="text-gray-900 font-semibold text-lg mb-2">
                         Professional After-Sales Support
                       </h4>
-                      <p className="text-white/70">
+                      <p className="text-gray-700">
                         Comprehensive support and maintenance services for all
                         products
                       </p>
@@ -523,7 +523,7 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden"
+        className="py-20 bg-gradient-to-b from-green-50 to-white relative overflow-hidden"
       >
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
@@ -532,16 +532,16 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-green-500/20 text-green-400 text-sm font-semibold rounded-full mb-4">
+            <span className="inline-block px-4 py-2 bg-green-500/20 text-green-600 text-sm font-semibold rounded-full mb-4">
               GET IN TOUCH
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
               Visit Us{" "}
-              <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 Today
               </span>
             </h2>
-            <p className="text-lg text-white/70">
+            <p className="text-lg text-gray-700">
               We&apos;re here to serve you better
             </p>
           </div>
@@ -549,7 +549,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 text-center hover:bg-white/10 transition-all duration-500">
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-3xl p-8 text-center hover:bg-green-50 transition-all duration-500 shadow-lg">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-white"
@@ -571,14 +571,16 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Location</h3>
-                <p className="text-white/70 text-lg">Ruaka, Kiambu County</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Location
+                </h3>
+                <p className="text-gray-700 text-lg">Ruaka, Kiambu County</p>
               </div>
             </div>
 
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 text-center hover:bg-white/10 transition-all duration-500">
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-3xl p-8 text-center hover:bg-green-50 transition-all duration-500 shadow-lg">
                 <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-white"
@@ -594,14 +596,14 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Phone</h3>
-                <p className="text-white/70 text-lg">+254 700 776 994</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Phone</h3>
+                <p className="text-gray-700 text-lg">+254 700 776 994</p>
               </div>
             </div>
 
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 text-center hover:bg-white/10 transition-all duration-500">
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-3xl p-8 text-center hover:bg-green-50 transition-all duration-500 shadow-lg">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg
                     className="w-8 h-8 text-white"
@@ -617,9 +619,9 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Hours</h3>
-                <p className="text-white/70 text-lg">Mon-Sat: 8AM-8PM</p>
-                <p className="text-white/70 text-lg">Sun: 9AM-6PM</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Hours</h3>
+                <p className="text-gray-700 text-lg">Mon-Sat: 8AM-8PM</p>
+                <p className="text-gray-700 text-lg">Sun: 9AM-6PM</p>
               </div>
             </div>
           </div>
@@ -627,7 +629,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-16 relative overflow-hidden">
+      <footer className="bg-gray-900 py-16 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
         </div>
@@ -637,14 +639,14 @@ export default function Home() {
             <h3 className="text-4xl font-black bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-6">
               Safaricom Shop Ruaka
             </h3>
-            <p className="text-white/60 text-lg mb-8">
+            <p className="text-gray-300 text-lg mb-8">
               Your trusted mobile partner in Ruaka
             </p>
 
             <div className="flex justify-center space-x-8 mb-12">
               <a
                 href="#"
-                className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white/60 hover:text-green-400 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+                className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <svg
                   className="w-6 h-6"
@@ -656,7 +658,7 @@ export default function Home() {
               </a>
               <a
                 href="#"
-                className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white/60 hover:text-green-400 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+                className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <svg
                   className="w-6 h-6"
@@ -668,7 +670,7 @@ export default function Home() {
               </a>
               <a
                 href="#"
-                className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white/60 hover:text-green-400 hover:bg-white/20 transition-all duration-300 hover:scale-110"
+                className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-gray-400 hover:text-green-400 hover:bg-white/20 transition-all duration-300 hover:scale-110"
               >
                 <svg
                   className="w-6 h-6"
@@ -680,7 +682,7 @@ export default function Home() {
               </a>
             </div>
 
-            <p className="text-white/40">
+            <p className="text-gray-500">
               &copy; 2024 Safaricom Shop Ruaka. All rights reserved.
             </p>
           </div>
