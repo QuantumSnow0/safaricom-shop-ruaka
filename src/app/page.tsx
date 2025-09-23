@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100">
@@ -58,17 +62,17 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
+            <div className="text-center lg:text-left order-2 lg:order-1">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
                 Welcome to{" "}
                 <span className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent">
                   Ruaka Safaricom Shop
                 </span>
               </h1>
 
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 mb-8 leading-relaxed">
                 Experience cutting-edge mobile technology with our premium
                 services and revolutionary{" "}
                 <span className="text-green-600 font-bold">
@@ -78,57 +82,242 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="group relative px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/25">
+                <button className="group relative px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/25 text-sm sm:text-base">
                   <span className="relative z-10">Visit Our Shop</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
-                <button className="px-6 py-3 backdrop-blur-md bg-white/80 border border-green-300 text-gray-700 font-bold rounded-xl transition-all duration-300 hover:bg-green-50 hover:border-green-400">
+                <button className="px-4 sm:px-6 py-2 sm:py-3 backdrop-blur-md bg-white/80 border border-green-300 text-gray-700 font-bold rounded-xl transition-all duration-300 hover:bg-green-50 hover:border-green-400 text-sm sm:text-base">
                   Explore Services
                 </button>
               </div>
             </div>
 
-            {/* Right Visual */}
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
-                {/* Phone Mockups */}
-                <div className="space-y-4">
-                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
-                    <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
-                      <span className="text-2xl">📱</span>
-                    </div>
-                    <h3 className="text-gray-800 font-semibold text-sm text-center">
-                      Latest Phones
-                    </h3>
-                  </div>
-                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
-                    <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
-                      <span className="text-2xl">🎧</span>
-                    </div>
-                    <h3 className="text-gray-800 font-semibold text-sm text-center">
-                      Accessories
-                    </h3>
-                  </div>
+            {/* Right Visual - Circular Layout */}
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto order-1 lg:order-2">
+              {/* Center Card - Lipa Mdogo Mdogo (The Sun) */}
+              <motion.div
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.8, type: "spring" }}
+              >
+                <div className="relative group">
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-yellow-500/40 to-orange-500/40 rounded-full blur-xl"
+                    animate={{
+                      scale: [1, 1.2, 1],
+                      opacity: [0.3, 0.6, 0.3],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  ></motion.div>
+                  <motion.div
+                    className="relative w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-white rounded-full flex items-center justify-center shadow-2xl ring-4 ring-green-500/40"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <img
+                      src="/assets/icons/logo.png"
+                      alt="Safaricom Logo"
+                      className="w-16 h-16 sm:w-20 sm:h-20 lg:w-18 lg:h-18 object-cover"
+                    />
+                  </motion.div>
                 </div>
-                <div className="space-y-4 mt-8">
-                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
-                    <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
-                      <span className="text-2xl">💰</span>
-                    </div>
-                    <h3 className="text-gray-800 font-semibold text-sm text-center">
-                      Lipa Mdogo Mdogo
-                    </h3>
-                  </div>
-                  <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-2xl p-4 hover:bg-green-50 transition-all duration-300 shadow-lg">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center mb-3 mx-auto">
-                      <span className="text-2xl">🛠️</span>
-                    </div>
-                    <h3 className="text-gray-800 font-semibold text-sm text-center">
-                      Support
-                    </h3>
-                  </div>
-                </div>
-              </div>
+              </motion.div>
+
+              {/* Revolving Container */}
+              <motion.div
+                className="absolute inset-0"
+                animate={{ rotate: 360 }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                  repeatType: "loop",
+                }}
+              >
+                {/* Top Card - Phones */}
+                <motion.div
+                  className="absolute top-[-10] left-1/2 transform -translate-x-1/2 group"
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.2, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex items-center justify-center shadow-2xl m-2 sm:m-4 group-hover:scale-110"
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                    }}
+                    animate={{ rotate: [0, -360] }}
+                    transition={{
+                      rotate: {
+                        duration: 20,
+                        repeat: Infinity,
+                        ease: "linear",
+                        repeatType: "loop",
+                      },
+                      scale: {
+                        type: "spring",
+                        stiffness: 300,
+                      },
+                    }}
+                    style={{
+                      transformOrigin: "center",
+                    }}
+                  >
+                    <img
+                      src="/assets/icons/app.png"
+                      alt="App Icon"
+                      className="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                    />
+                  </motion.div>
+                </motion.div>
+
+                {/* Right Card - Accessories */}
+                <motion.div
+                  className="absolute top-1/2 right-[-10] transform -translate-y-1/2 group"
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.4, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex items-center justify-center shadow-2xl m-2 sm:m-4 group-hover:scale-110"
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                    }}
+                    animate={{ rotate: [0, -360] }}
+                    transition={{
+                      rotate: {
+                        duration: 20,
+                        repeat: Infinity,
+                        ease: "linear",
+                        repeatType: "loop",
+                      },
+                      scale: {
+                        type: "spring",
+                        stiffness: 300,
+                      },
+                    }}
+                    style={{
+                      transformOrigin: "center",
+                    }}
+                  >
+                    <img
+                      src="/assets/icons/battery.png"
+                      alt="Support Icon"
+                      className="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                    />
+                  </motion.div>
+                </motion.div>
+
+                {/* Bottom Card - Support */}
+                <motion.div
+                  className="absolute bottom-[-10] left-1/2 transform -translate-x-1/2 group"
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.6, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex items-center justify-center shadow-2xl m-2 sm:m-4 group-hover:scale-110"
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                    }}
+                    animate={{ rotate: [0, -360] }}
+                    transition={{
+                      rotate: {
+                        duration: 20,
+                        repeat: Infinity,
+                        ease: "linear",
+                        repeatType: "loop",
+                      },
+                      scale: {
+                        type: "spring",
+                        stiffness: 300,
+                      },
+                    }}
+                    style={{
+                      transformOrigin: "center",
+                    }}
+                  >
+                    <img
+                      src="/assets/icons/support.png"
+                      alt="Support Icon"
+                      className="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                    />
+                  </motion.div>
+                </motion.div>
+
+                {/* Left Card - Internet */}
+                <motion.div
+                  className="absolute top-1/2 left-[-10] transform -translate-y-1/2 group"
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.8, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white rounded-full flex items-center justify-center shadow-2xl m-2 sm:m-4 group-hover:scale-110"
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                    }}
+                    animate={{ rotate: [0, -360] }}
+                    transition={{
+                      rotate: {
+                        duration: 20,
+                        repeat: Infinity,
+                        ease: "linear",
+                        repeatType: "loop",
+                      },
+                      scale: {
+                        type: "spring",
+                        stiffness: 300,
+                      },
+                    }}
+                    style={{
+                      transformOrigin: "center",
+                    }}
+                  >
+                    <img
+                      src="/assets/icons/wifi.png"
+                      alt="internet Icon"
+                      className="w-10 h-10 sm:w-12 sm:h-12 lg:w-12 lg:h-12"
+                    />
+                  </motion.div>
+                </motion.div>
+              </motion.div>
+
+              {/* Decorative Rings */}
+              <motion.div
+                className="absolute inset-0 border-2 border-green-200/30 rounded-full"
+                animate={{
+                  scale: [1, 1.05, 1],
+                  opacity: [0.3, 0.6, 0.3],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              ></motion.div>
+              <motion.div
+                className="absolute inset-8 border border-green-300/20 rounded-full"
+                animate={{
+                  scale: [1, 1.1, 1],
+                  opacity: [0.2, 0.4, 0.2],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
+              ></motion.div>
             </div>
           </div>
         </div>
@@ -157,7 +346,7 @@ export default function Home() {
           </div>
 
           {/* Mobile-First Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 - Lipa Mdogo Mdogo */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
@@ -360,6 +549,56 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Service 5 - Internet Services */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+              <div className="relative bg-white/90 backdrop-blur-md border border-green-200 rounded-2xl p-6 hover:bg-green-50 transition-all duration-500 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
+                      Internet Services
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                  Fast and reliable internet connectivity solutions for homes
+                  and businesses. Get connected with our high-speed internet
+                  packages and enjoy seamless online experiences.
+                </p>
+                <div className="flex items-center text-purple-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  Get Connected
+                  <svg
+                    className="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -389,9 +628,9 @@ export default function Home() {
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 We specialize in customer care, mobile accessories, the latest
-                smartphones, and our signature Lipa Mdogo Mdogo service that
-                makes premium mobile devices accessible to everyone through
-                flexible payment plans.
+                smartphones, internet services, and our signature Lipa Mdogo
+                Mdogo service that makes premium mobile devices accessible to
+                everyone through flexible payment plans.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
